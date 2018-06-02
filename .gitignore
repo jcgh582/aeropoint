@@ -1,0 +1,4 @@
+*.pyc
+/dist/
+/*.egg-info
+aeropoint/__pycache__
