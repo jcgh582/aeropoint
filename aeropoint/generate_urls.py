@@ -17,9 +17,9 @@ def create_url(base_station_id, datetime_):
 
     return url
 
-def create_urls(base_station_id, start_datetime, end_datetime):
+def generate_urls(base_station_id, start_datetime, end_datetime):
     sdt = helpers.convert_iso8601_to_datetime(start_datetime)
     edt = helpers.convert_iso8601_to_datetime(end_datetime)
 
-    return [create_url(base_station_id, datetime_) \
-        for datetime_ in hourly_datetime_iterator(sdt, edt)]
+    for datetime_ in hourly_datetime_iterator(sdt, edt):
+        yield create_url(base_station_id, datetime_)

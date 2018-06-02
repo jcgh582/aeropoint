@@ -1,5 +1,5 @@
-import datetime
 import unittest
+import datetime
 
 from aeropoint.hourly_datetime_iterator import hourly_datetime_iterator
 
