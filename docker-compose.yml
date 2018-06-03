@@ -5,7 +5,7 @@ services:
         image: aeropoint
         build: .
         volumes:
-            - /Users/jhill/gitRepo/aeropoint:/root/src
+            - ${PWD}:/root/src
 
     aeropointtests:
         image: aeropoint

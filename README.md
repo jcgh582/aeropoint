@@ -1,6 +1,6 @@
 ## install
 
-- Make sure you have docker installed
+- Make sure you have docker installed and it is running
 - ./install
 
 ## run example
@@ -22,6 +22,7 @@
 ## other relevant info
 
 - if an exception is thrown, you will get a stack trace
+- I have added the teqc binary to my source repo. It's not ideal, but it makes installing the application easier
 
 ## Assumptions
 
@@ -29,4 +30,3 @@
     - good: 2018-06-01T23:11:22Z
     - bad: 2018-06-01T23:11:22
 
-- I have added the teqc binary to my source repo. It's not ideal, but it makes installing the application easier
