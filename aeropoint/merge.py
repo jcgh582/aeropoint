@@ -3,7 +3,7 @@ import subprocess
 
 from aeropoint.helpers import write_to_file
 
-OUTPUT_FILENAME = 'example.obs'
+OUTPUT_FILENAME = 'output/example.obs'
 
 def _create_bash_command(filenames):
     bash_command = './teqc '

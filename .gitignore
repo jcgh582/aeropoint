@@ -2,5 +2,4 @@
 /dist/
 /*.egg-info
 aeropoint/__pycache__
-rawData/.*
 example.obs

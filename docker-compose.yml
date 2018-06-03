@@ -5,7 +5,8 @@ services:
         image: aeropoint
         build: .
         volumes:
-            - ${PWD}:/root/src
+            - ${PWD}/output:/root/src/output
+            - ${PWD}/rawData:/root/src/rawData
 
     aeropointtests:
         image: aeropoint
