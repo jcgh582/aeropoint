@@ -7,6 +7,8 @@ services:
         volumes:
             - ${PWD}/output:/root/src/output
             - ${PWD}/rawData:/root/src/rawData
+        ports:
+            - "21:21"
 
     aeropointtests:
         image: aeropoint
