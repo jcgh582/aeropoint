@@ -10,7 +10,7 @@ def download_url(url):
         detailsOfDownloadedFile = urlretrieve(url, DESTINATION + url.split('/')[-1])
         nameOfDownloadedFile = detailsOfDownloadedFile[0]
     except Exception as e:
-        logging.warn('error downloading file from url {}'.format(url))
+        logging.error('error downloading file from url {}'.format(url))
         raise e
 
     return nameOfDownloadedFile

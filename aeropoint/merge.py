@@ -16,9 +16,13 @@ def _log_warning(stderr_):
     for message in [message_ for message_ in stderr_.decode("utf-8").split('\n') if message_ != '']:
         logging.warn(message)
 
+def _log_error(stderr_):
+    for message in [message_ for message_ in stderr_.decode("utf-8").split('\n') if message_ != '']:
+        logging.error(message)
+
 def _handle_error(stderr_, exit_code):
     if exit_code:
-        _log_warning(stderr_)
+        _log_error(stderr_)
         raise Exception('error running bash command - exit code: {}'.format(exit_code))
 
     if stderr_:
