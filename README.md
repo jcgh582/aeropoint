@@ -13,7 +13,7 @@
 
 ## results
 
-- output/result will be in example.obs
+- result for that run will be in output/example.obs
 
 ## intermediate data
 
