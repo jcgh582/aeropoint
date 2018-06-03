@@ -1,5 +1,4 @@
 import datetime
-import unittest
 import unittest.mock
 
 from aeropoint.generate_urls import generate_urls

@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+    aeropoint:
+        image: aeropoint
+        build: .
+        volumes:
+            - /Users/jhill/gitRepo/aeropoint:/root/src
+
+    aeropointtests:
+        image: aeropoint
+        build: .

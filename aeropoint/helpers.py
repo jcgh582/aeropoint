@@ -1,4 +1,6 @@
 import dateutil.parser
+import gzip
+import shutil
 
 HOUR_TO_LETTER_MAP = {
     '0': 'a',
@@ -44,6 +46,16 @@ def get_year_shorthand_as_string(datetime_):
 def convert_hour_to_letter(hour):
     return HOUR_TO_LETTER_MAP[hour]
 
-# TODO: should convert to utc aswell (if not already utc)
 def convert_iso8601_to_datetime(iso8601_datetime):
     return dateutil.parser.parse(iso8601_datetime)
+
+def write_to_file(content, filename):
+    with open(filename, "wb") as f:
+        f.write(content)
+
+def decompress_gz_file(filename):
+    with gzip.open(filename, 'rb') as f_in:
+        with open(filename[:-3], 'wb') as f_out:
+            shutil.copyfileobj(f_in, f_out)
+
+    return filename[:-3]
