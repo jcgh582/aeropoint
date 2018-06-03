@@ -29,7 +29,7 @@ class TestMerge(unittest.TestCase):
 
         merge(filenames)
 
-        mock_write_to_file.assert_called_with(merged_file_contents, 'example.obs')
+        mock_write_to_file.assert_called_with(merged_file_contents, 'output/example.obs')
 
     @unittest.mock.patch('aeropoint.merge.write_to_file')
     @unittest.mock.patch('aeropoint.merge.subprocess.Popen')
