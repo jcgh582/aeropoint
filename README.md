@@ -22,6 +22,7 @@
 ## other relevant info
 
 - if an exception is thrown, you will get a stack trace
+- when I am raising an exception it is a general exception i.e. Exception. Ideally they would be custom or more specific
 - I have added the teqc binary to my source repo. It's not ideal, but it makes installing the application easier
 
 ## Assumptions
