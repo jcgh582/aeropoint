@@ -1,7 +1,7 @@
 ## install
 
 - Make sure you have docker installed and it is running
-- ./install
+- It will 'install' itself the first time you run it
 
 ## run example
 

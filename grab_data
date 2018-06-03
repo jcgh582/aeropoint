@@ -1,4 +1,5 @@
 #!/bin/bash
 set -e
 
+./install
 docker-compose run aeropoint grab_data $@
