@@ -13,16 +13,16 @@
 
 ## results
 
-- result for that run will be in output/example.obs
+- Result for that run will be in output/example.obs
 
 ## intermediate data
 
-- zipped and unzipped files downloaded from ftp server will be in rawData directory
+- Zipped and unzipped files downloaded from ftp server will be in rawData directory
 
 ## other relevant info
 
-- if an exception is thrown, you will get a stack trace
-- when I am raising an exception it is a general exception i.e. Exception. Ideally they would be custom or more specific
+- The only tests are unittests
+- If an exception is thrown, you will get a stack trace
 - I have added the teqc binary to my source repo. It's not ideal, but it makes installing the application easier
 
 ## Assumptions
